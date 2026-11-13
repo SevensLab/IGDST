@@ -59,29 +59,3 @@ python scripts/preprocess.py \
 
 The example contains one invented accident narrative. It contains no reference labels, model predictions, or paper results.
 
-## Expected private data interface
-
-Full benchmark preparation requires author-supplied workbooks outside this repository:
-
-```text
-data/gold/ihms.xlsx
-data/gold/osha.xlsx
-```
-
-Each workbook uses three sheets:
-
-- `Annotation`: resource–accident pairs and the four gold fields;
-- `Accident_Context`: complete accident narratives;
-- `Tag_Vocabulary`: allowed tags and definitions.
-
-The four annotation fields are `gold_include_resource`, `gold_hazard_tags`, `gold_operation_stage_tags`, and `gold_accident_type_tags`. Multilabel values use semicolon-separated controlled tags.
-
-The data and output roots can be supplied outside the repository with `IGDST_DATA_DIR` and `IGDST_RESULTS_DIR`. Generated predictions and metrics should remain in that external output location.
-
-## Inference configuration
-
-The repository includes the prompts and a provider-neutral inference adapter, but it deliberately includes no endpoint, model selection, key, or provider-specific configuration. Anyone running model-based methods must provide their own private configuration outside the repository. The offline preprocessing and rule baselines do not require it.
-
-## Reproducibility boundary
-
-The public materials expose the algorithms, prompts, controlled vocabulary, rules, data schema, and evaluation implementation. Reproducing the manuscript's numerical results additionally requires the original datasets, completed expert annotations, and inference outputs, which are not distributed in this repository.
