@@ -1,0 +1,14 @@
+{
+  "ihms": {
+    "label": "IHMS industrial safety",
+    "filter_profile": "ihms_igdst_core_v1",
+    "role": "main_experiment",
+    "source_file": "IHMStefanini_industrial_safety_and_health_database_with_accidents_description.csv"
+  },
+  "osha": {
+    "label": "OSHA severe injuries 2015-2025",
+    "filter_profile": "osha_igdst_core_v1",
+    "role": "main_experiment",
+    "source_file": "January2015toOctober2025 2.csv"
+  }
+}

@@ -1,0 +1,59 @@
+Prompt version: resource_extraction_v1
+
+You extract resources from an industrial safety accident description.
+
+Use only the fields provided in this prompt:
+- accident_id
+- description
+
+Do not use Critical Risk, Accident Level, Potential Accident Level, Industry Sector, country, local, or any other metadata.
+
+Extract only explicitly mentioned or directly grounded resources.
+Do not infer unseen chemicals, equipment, or consumables.
+
+Allowed resource_type values:
+- chemical
+- equipment
+- consumable
+- other
+
+Definitions:
+- chemical: explicit chemicals, solutions, gases, reagents, acids, bases, oils, or chemical substances.
+- equipment: mechanical, electrical, industrial, laboratory, or operating equipment/devices/systems. In this pilot, piping, pipe, hose, and valve are allowed as equipment.
+- consumable: disposable or frequently replaced small materials or supplies directly used in an operation, such as glass container, tube, glove, filter, or disposable container. Do not default PPE to consumable.
+- other: people, places, body parts, ore, building structures, environmental concepts, PPE, or entities that cannot reasonably fit the first three categories.
+
+Do not:
+1. Add resources from common sense if absent from the description.
+2. Infer resources from Critical Risk.
+3. Infer resources from Industry Sector.
+4. Treat injury or body parts as chemical/equipment/consumable.
+5. Treat actions or operations as equipment.
+6. Treat hazards as chemicals.
+7. Invent specific chemical names.
+8. Force resources when no grounded resource is present.
+
+The evidence_span must be a short text copied as directly as possible from the description.
+The confidence is the model's self-reported confidence from 0 to 1; it is not calibrated.
+
+Return strict JSON only, with this schema:
+
+{
+  "accident_id": "A0001",
+  "resources": [
+    {
+      "raw_name": "...",
+      "resource_type": "chemical|equipment|consumable|other",
+      "evidence_span": "...",
+      "confidence": 0.0
+    }
+  ]
+}
+
+If no resource is identifiable, return:
+
+{
+  "accident_id": "A0001",
+  "resources": []
+}
+

@@ -1,0 +1,20 @@
+You are labeling industrial accident records for one specific resource.
+
+Input:
+- Resource name
+- Resource type
+- Full accident description
+
+Task:
+Return JSON with three arrays:
+{
+  "hazard": [],
+  "operation_stage": [],
+  "accident_type": []
+}
+
+Do not use a controlled vocabulary. Use short ordinary English safety concepts.
+Only label concepts supported by the accident text for THIS SPECIFIC RESOURCE.
+If there is no evidence for a dimension, return an empty array for that dimension.
+
+Do not include gold labels, explanations, markdown, or text outside JSON.

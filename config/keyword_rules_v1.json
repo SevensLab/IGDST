@@ -1,0 +1,293 @@
+{
+  "hazard": {
+    "chemical_contact_hazard": [
+      "chemical exposure",
+      "exposed to chemical",
+      "contact with chemical",
+      "chemical splash",
+      "chemical spill",
+      "splashed with",
+      "sprayed with"
+    ],
+    "corrosive_exposure": [
+      "corrosive",
+      "caustic",
+      "caustic soda",
+      "sulfuric acid",
+      "sulphuric acid",
+      "nitric acid",
+      "hydrochloric acid",
+      "acid burn"
+    ],
+    "flammable_or_fire_hazard": [
+      "caught fire",
+      "flash fire",
+      "fire",
+      "flame",
+      "ignition",
+      "explosion",
+      "explosive"
+    ],
+    "high_pressure": [
+      "high pressure",
+      "pressurized",
+      "pressurised",
+      "overpressure",
+      "compressed air",
+      "hydraulic pressure",
+      "pneumatic pressure"
+    ],
+    "rotating_machinery": [
+      "rotating",
+      "spinning",
+      "rotating drill",
+      "moving belt",
+      "transmission belt",
+      "pulley"
+    ],
+    "pinch_crush_hazard": [
+      "caught between",
+      "trapped between",
+      "pinched",
+      "crushed between",
+      "crushed by",
+      "squeezed"
+    ],
+    "sharp_object": [
+      "sharp edge",
+      "blade",
+      "knife",
+      "cut by",
+      "puncture",
+      "punctured"
+    ],
+    "fall_hazard": [
+      "fell from",
+      "fall from",
+      "slipped and fell",
+      "tripped and fell",
+      "lost balance"
+    ],
+    "thermal_hazard": [
+      "hot water",
+      "hot oil",
+      "heated surface",
+      "steam",
+      "boiling",
+      "molten",
+      "scald"
+    ],
+    "electrical_hazard": [
+      "electric shock",
+      "electrical shock",
+      "arc flash",
+      "energized",
+      "energised",
+      "live wire",
+      "live cable"
+    ],
+    "vehicle_mobile_equipment": [
+      "forklift struck",
+      "truck hit",
+      "vehicle collision",
+      "truck collided",
+      "forklift collided",
+      "run over"
+    ],
+    "stored_energy": [
+      "stored energy",
+      "spring-loaded",
+      "under tension",
+      "released tension",
+      "cable snapped",
+      "chain snapped",
+      "rebound",
+      "whiplash"
+    ],
+    "falling_object": [
+      "falling object",
+      "object fell",
+      "object dropped",
+      "load dropped",
+      "rock fell",
+      "fell on"
+    ]
+  },
+  "operation_stage": {
+    "inspection": [
+      "pre-use inspection",
+      "inspection",
+      "checking",
+      "check list",
+      "checklist"
+    ],
+    "maintenance": [
+      "maintenance",
+      "servicing",
+      "lubrication"
+    ],
+    "cleaning": [
+      "cleaning",
+      "cleaned",
+      "unclogging",
+      "flushing",
+      "washing"
+    ],
+    "startup": [
+      "startup",
+      "start-up",
+      "starting up",
+      "activating",
+      "energizing",
+      "energising"
+    ],
+    "normal_operation": [
+      "normal operation",
+      "routine operation",
+      "while operating",
+      "operating the"
+    ],
+    "loading": [
+      "loading",
+      "loaded into",
+      "charging"
+    ],
+    "unloading": [
+      "unloading",
+      "unloaded",
+      "discharging",
+      "emptying"
+    ],
+    "transfer": [
+      "transferring",
+      "transfer of",
+      "pumping",
+      "pumped",
+      "pouring"
+    ],
+    "connection_disconnection": [
+      "disconnecting",
+      "disconnection",
+      "uncoupled",
+      "uncoupling",
+      "connecting",
+      "loosening"
+    ],
+    "repair": [
+      "repair",
+      "repairing",
+      "fixing",
+      "replacement of",
+      "replacing"
+    ],
+    "transport": [
+      "transporting",
+      "driving",
+      "hauling"
+    ],
+    "installation": [
+      "installation",
+      "installing",
+      "mounting",
+      "anchoring"
+    ],
+    "manual_handling": [
+      "manual handling",
+      "lifting",
+      "carrying",
+      "pulling with both hands",
+      "pushing"
+    ]
+  },
+  "accident_type": {
+    "chemical_splash": [
+      "chemical splash",
+      "splashed",
+      "sprayed",
+      "projected solution",
+      "spattered"
+    ],
+    "leak_release": [
+      "leak",
+      "leakage",
+      "spilled",
+      "spill",
+      "escaped from",
+      "loss of containment",
+      "ruptured and released"
+    ],
+    "burn": [
+      "burn",
+      "burned",
+      "burnt",
+      "scald"
+    ],
+    "caught_in_between": [
+      "caught between",
+      "trapped between",
+      "pinched",
+      "crushed between"
+    ],
+    "struck_by": [
+      "struck by",
+      "hit by",
+      "impacted by",
+      "fell on",
+      "dropped on"
+    ],
+    "cut_laceration": [
+      "laceration",
+      "cut by",
+      "punctured",
+      "puncture wound"
+    ],
+    "fall": [
+      "fell from",
+      "fell to",
+      "slipped and fell",
+      "tripped and fell",
+      "lost balance"
+    ],
+    "collision": [
+      "collision",
+      "collided",
+      "crash",
+      "hit by truck",
+      "struck by vehicle"
+    ],
+    "equipment_failure": [
+      "equipment failure",
+      "malfunction",
+      "failed",
+      "ruptured",
+      "broke",
+      "broken",
+      "detached",
+      "uncoupled"
+    ],
+    "abnormal_movement": [
+      "unexpectedly moved",
+      "moved unexpectedly",
+      "slid",
+      "shifted",
+      "swung",
+      "bounced",
+      "unexpected displacement"
+    ],
+    "projectile_ejection": [
+      "ejected",
+      "projected",
+      "flying fragment",
+      "fragments flew",
+      "shot out"
+    ],
+    "chemical_exposure": [
+      "chemical exposure",
+      "exposed to chemical",
+      "contact with chemical",
+      "inhaled",
+      "chemical reached",
+      "splashed into"
+    ]
+  }
+}
